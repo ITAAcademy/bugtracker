@@ -19,6 +19,7 @@
  */
 class Users extends CActiveRecord
 {
+    public $verifyCode;
 	/**
 	 * @return string the associated database table name
 	 */
@@ -41,6 +42,7 @@ class Users extends CActiveRecord
 			array('email, fullname', 'length', 'max'=>256),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
+            array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements()),
 			array('id, login, password, email, fullname, canAddProject', 'safe', 'on'=>'search'),
 		);
 	}

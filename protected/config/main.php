@@ -7,7 +7,8 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'My Web Application',
+	'name'=>'Управління завданнями та проектами BugKillers',
+    'language' => 'uk',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -17,19 +18,19 @@ return array(
 		'application.models.*',
 		'application.components.*',
 	),
-
+    /*
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
-		/*
+	 
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
-			'password'=>'Enter Your Password Here',
+			'password'=>'11223344',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
-		*/
+ 
 	),
-
+    */
 	// application components
 	'components'=>array(
 
@@ -39,7 +40,7 @@ return array(
 		),
 
 		// uncomment the following to enable URLs in path-format
-		/*
+	 
 		'urlManager'=>array(
 			'urlFormat'=>'path',
 			'rules'=>array(
@@ -48,7 +49,7 @@ return array(
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
 		),
-		*/
+	 
 
 		// database settings are configured in database.php
 		'db'=>require(dirname(__FILE__).'/database.php'),
@@ -80,6 +81,11 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
-		'adminEmail'=>'webmaster@example.com',
+		'adminEmail'=>'BugKillers@i.ua',
+        //BugKillers@i.ua
+        //login     BugKillers
+        //password  mixedita
+        //улюблена страва 
+        //          eggs
 	),
 );
